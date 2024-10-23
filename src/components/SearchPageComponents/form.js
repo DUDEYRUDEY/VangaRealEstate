@@ -4,7 +4,9 @@ function SearchForm() {
     const [formData, setFormData] = useState({
         address: '',
         bathrooms: '',
+        bedrooms: '',
         carpark: '',
+        houseType: '',
         buildingArea: '',
         landsize: '',
     });
@@ -77,6 +79,33 @@ function SearchForm() {
                             fontSize: '16px',
                             outline: 'none',
                         }}
+                        min= "0" //User can on input positive numbers not negative
+                    />
+                </div>
+                
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '5px',
+                }}>
+                    <label style={{
+                        fontWeight: 'bold',
+                        marginBottom: '5px',
+                    }}>Number of Bedrooms</label>
+                    <input
+                        type="number"
+                        name="bedrooms"
+                        placeholder="Number of Bedrooms"
+                        value={formData.bedrooms}
+                        onChange={handleChange}
+                        style={{
+                            padding: '10px',
+                            border: '1px solid #ccc',
+                            borderRadius: '5px',
+                            fontSize: '16px',
+                            outline: 'none',
+                        }}
+                        min= "0" //User can on input positive numbers not negative
                     />
                 </div>
 
@@ -94,6 +123,32 @@ function SearchForm() {
                         name="carpark"
                         placeholder="Carpark"
                         value={formData.carpark}
+                        onChange={handleChange}
+                        style={{
+                            padding: '10px',
+                            border: '1px solid #ccc',
+                            borderRadius: '5px',
+                            fontSize: '16px',
+                            outline: 'none',
+                        }}
+                        min= "0" //User can on input positive numbers not negative
+                    />
+                </div>
+
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '5px',
+                }}>
+                    <label style={{
+                        fontWeight: 'bold',
+                        marginBottom: '5px',
+                    }}>Type Of House (e.g.,townhouse, unit/apartment)</label>
+                    <input
+                        type="string"
+                        name="houseType"
+                        placeholder="Type of House"
+                        value={formData.houseType}
                         onChange={handleChange}
                         style={{
                             padding: '10px',
@@ -127,6 +182,7 @@ function SearchForm() {
                             fontSize: '16px',
                             outline: 'none',
                         }}
+                        min= "0" //User can on input positive numbers not negative
                     />
                 </div>
 
@@ -152,6 +208,7 @@ function SearchForm() {
                             fontSize: '16px',
                             outline: 'none',
                         }}
+                        min= "0" //User can on input positive numbers not negative
                     />
                 </div>
 
