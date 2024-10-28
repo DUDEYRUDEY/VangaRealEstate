@@ -1,0 +1,35 @@
+.prediction-wrapper {
+    width: 100%; 
+    height: 100%;
+    margin: 5rem 0rem;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 0rem 1rem;
+
+}
+
+.prediction-header {
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    gap: 3rem;
+    text-align: center; 
+
+    max-width: 900px;
+}
+
+.prediction-header__heading {
+    color: #000; 
+    font-family: "Montserrat", sans-serif; 
+}
+
+.prediction-header__text {
+    font-family: "Inter", sans-serif; 
+    text-align: center; 
+}
